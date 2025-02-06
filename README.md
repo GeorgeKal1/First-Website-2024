@@ -8,4 +8,6 @@ Database hosted locally by: Xampp
 
 To see the start of the project, in finalerg file open arxiki.html
 
+To also view the rest of the project with no problems download Xampp Control Panel and start "Apache" and "MySQL module"
+
 
