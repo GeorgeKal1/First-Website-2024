@@ -6,3 +6,6 @@ Weather API: https://openweathermap.org
 
 Database hosted locally by: Xampp
 
+To see the start of the project, in finalerg file open arxiki.html
+
+
