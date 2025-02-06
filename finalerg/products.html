@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products</title>
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="images/logo.jpeg" type="jpeg"> 
+
+    
+
+</head>
+<body>
+    <div style="border-bottom: 2px solid grey;"></div>
+    <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
+        <div style="flex: 1;"><a href="arxiki.html">Info</a></div>
+        <div style="flex: 1;"><a href="products.html">Products</a></div>
+        <div style="flex: 1;"><a href="signUp.html" target="_blank">SignUp</a></div>
+        <div style="flex: 1;"><a href="discount.html">Discount🤑</a></div>
+        <div style="flex: 1;"><a href="ChrComp.html">Christmas Competition</a></div>
+        <div style="flex: 1;"><a href="orders.html" target="_blank">Order</a></div>
+        <div style="flex: 1;"><a href="guide.php">Guide</a></div>
+    </div>
+    <div style="border-top: 2px solid grey;"></div>
+    
+    
+    <h1 id="top">Τα κύρια προιόντα μας</h1> 
+    <div style="display: flex; justify-content: space-between; width: 50%; border: 3px solid grey; margin: auto;">
+        <div style="flex: 1;" class="kati" onclick="jackets()"><p style="text-align: center;">jackets</p></div>
+        <div style="flex: 1;" class="kati" onclick="shoes()"><p style="text-align: center;">shoes</p></div>
+        <div style="flex: 1;" class="kati" onclick="hoodies()"><p style="text-align: center;">hoodies</p></div>
+        <div style="flex: 1;" class="kati" onclick="trousers()"><p style="text-align: center;">trousers</p></div>
+        <div style="flex: 1;" class="kati" onclick="shorts()"><p style="text-align: center;">shorts</p></div>
+            
+    </div><br>
+
+
+    <section id="jackets">
+        <div class="table1">
+            <div class="div1">
+                <div class="div2"><img src="product/j1.webp" class="img1"></div>
+                <div class="div2"><img src="product/j2.webp" class="img1"></div>
+                <div class="div2"><img src="product/j3.webp" class="img1"></div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><p style="text-align: center;">jacket1</p></div>
+                <div class="div2"><p style="text-align: center;">jacket2</p></div>
+                <div class="div2"><p style="text-align: center;">jacket3</p></div>    
+            </div>
+            <div class="div1">
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b1" class="selecting" onclick="document.getElementById('b1').innerHTML=`added to cart`"> Add to cart </button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b2" class="selecting" onclick="document.getElementById('b2').innerHTML=`added to cart`">Add to cart</button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b3" class="selecting" onclick="document.getElementById('b3').innerHTML=`added to cart`">Add to cart</button>
+                </div>    
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="shoes" style="display: none;">
+        <div class="table1">
+            <div class="div1">
+                <div class="div2"><img src="product/shoe1.webp" class="img1"></div>
+                <div class="div2"><img src="product/shoe2.webp" class="img1"></div>
+                <div class="div2"><img src="product/shoe3.webp" class="img1"></div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><p style="text-align: center;">shoe1</p></div>
+                <div class="div2"><p style="text-align: center;">shoe2</p></div>
+                <div class="div2"><p style="text-align: center;">shoe3</p></div>    
+            </div>
+            <div class="div1">
+                <div class="div2 caption1">
+                    <select>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                    </select>
+                    <button id="b4" class="selecting" onclick="document.getElementById('b4').innerHTML=`added to cart`"> Add to cart </button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                    </select>
+                    <button id="b5" class="selecting" onclick="document.getElementById('b5').innerHTML=`added to cart`">Add to cart</button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                    </select>
+                    <button id="b6" class="selecting" onclick="document.getElementById('b6').innerHTML=`added to cart`">Add to cart</button>
+                </div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><img src="product/shoe4.webp" class="img1"></div>
+                <div class="div2"><img src="product/shoe5.webp" class="img1"></div>
+                <div class="div2"><img src="product/shoe6.webp" class="img1"></div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><p style="text-align: center;">shoe1</p></div>
+                <div class="div2"><p style="text-align: center;">shoe2</p></div>
+                <div class="div2"><p style="text-align: center;">shoe3</p></div>    
+            </div>
+            <div class="div1">
+                <div class="div2 caption1">
+                    <select>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                    </select>
+                    <button id="b7" class="selecting" onclick="document.getElementById('b7').innerHTML=`added to cart`"> Add to cart </button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                    </select>
+                    <button id="b8" class="selecting" onclick="document.getElementById('b8').innerHTML=`added to cart`">Add to cart</button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                    </select>
+                    <button id="b9" class="selecting" onclick="document.getElementById('b9').innerHTML=`added to cart`">Add to cart</button>
+                </div>    
+            </div>
+        </div>
+            
+        </div>
+    </section>
+
+
+
+    <section id="hoodies" style="display: none;">
+        <div class="table1">
+            <div class="div1">
+                <div class="div2"><img src="product/fouter1.webp" class="img1"></div>
+                <div class="div2"><img src="product/fouter2.webp" class="img1"></div>
+                <div class="div2"><img src="product/fouter3.webp" class="img1"></div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><p style="text-align: center;">shoe1</p></div>
+                <div class="div2"><p style="text-align: center;">shoe2</p></div>
+                <div class="div2"><p style="text-align: center;">shoe3</p></div>    
+            </div>
+            <div class="div1">
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b10" class="selecting" onclick="document.getElementById('b10').innerHTML=`added to cart`"> Add to cart </button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b11" class="selecting" onclick="document.getElementById('b11').innerHTML=`added to cart`">Add to cart</button>
+                </div>
+                <div class="div2 caption1">
+                    <select>                                                                                                                                         
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b12" class="selecting" onclick="document.getElementById('b12').innerHTML=`added to cart`">Add to cart</button>
+                </div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><img src="product/fouter4.webp" class="img1"></div>
+                <div class="div2"><img src="product/fouter5.webp" class="img1"></div>
+                <div class="div2"><img src="product/fouter6.webp" class="img1"></div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><p style="text-align: center;">shoe1</p></div>
+                <div class="div2"><p style="text-align: center;">shoe2</p></div>
+                <div class="div2"><p style="text-align: center;">shoe3</p></div>    
+            </div>
+            <div class="div1">
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b13" class="selecting" onclick="document.getElementById('b13').innerHTML=`added to cart`"> Add to cart </button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b14" class="selecting" onclick="document.getElementById('b14').innerHTML=`added to cart`">Add to cart</button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b15" class="selecting" onclick="document.getElementById('b15').innerHTML=`added to cart`">Add to cart</button>
+                </div>    
+            </div> 
+        </div>     
+    </section>
+
+
+
+    <section id="trousers" style="display: none">
+        <div class="table1">
+            <div class="div1">
+                <div class="div2"><img src="product/trou1.webp" class="img1"></div>
+                <div class="div2"><img src="product/trou2.webp" class="img1"></div>
+                <div class="div2"><img src="product/trou3.webp" class="img1"></div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><p style="text-align: center;">trouser1</p></div>
+                <div class="div2"><p style="text-align: center;">trouser2</p></div>
+                <div class="div2"><p style="text-align: center;">trouser3</p></div>    
+            </div>
+            <div class="div1">
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b16" class="selecting" onclick="document.getElementById('b16').innerHTML=`added to cart`"> Add to cart </button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b17" class="selecting" onclick="document.getElementById('b17').innerHTML=`added to cart`">Add to cart</button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b18" class="selecting" onclick="document.getElementById('b18').innerHTML=`added to cart`">Add to cart</button>
+                </div>    
+            </div> 
+        </div>     
+    </section>
+
+    <section id="shorts" style="display: none">
+        <div class="table1">
+            <div class="div1">
+                <div class="div2"><img src="product/sh1.webp" class="img1"></div>
+                <div class="div2"><img src="product/sh2.webp" class="img1"></div>
+                <div class="div2"><img src="product/sh3.webp" class="img1"></div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><p style="text-align: center;">shorts1</p></div>
+                <div class="div2"><p style="text-align: center;">shorts2</p></div>
+                <div class="div2"><p style="text-align: center;">shorts3</p></div>    
+            </div>
+            <div class="div1">
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b19" class="selecting" onclick="document.getElementById('b19').innerHTML=`added to cart`"> Add to cart </button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b20" class="selecting" onclick="document.getElementById('b20').innerHTML=`added to cart`">Add to cart</button>
+                </div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b21" class="selecting" onclick="document.getElementById('b21').innerHTML=`added to cart`">Add to cart</button>
+                </div>    
+            </div> 
+        </div>     
+    </section>
+    <br>
+    <br>
+
+
+    <h1>Introducing...</h1>
+    <section class="greysec">
+        <div style="display: flex;">
+            <div style="flex:1;">
+                <img src="product/infinity.webp" class="img1" style="width: 25vw; height: auto; " id="p1">
+
+                <video src="product/video.mp4" class="img1" style="width: 25vw; height: auto; display: none;" controls type="video/mp4" id="p2"></video>
+            </div>
+            <div style="flex:1; text-align: center;;">
+                <h2>INFINITY 1</h2>
+                <h3>Ενημερωθείτε για το νέο μας παπούτσι που αναπτύχθηκε για μέγιστη άνεση, αθλητικότητα, δύναμη και ισχύ. Διατίθεται σε όλα τα μεγέθη</h3><br>
+                
+                <div class="forswap"><p id="prev" onclick="swap()" style="text-align: center;">Preview video</p></div><br>
+                <center><button style=" background-color: black; border: 2px solid black; border-radius: 3px;"><a style="padding: 2%;color: lightgray;" href="https://www.nike.com/gr/t/%CE%B1%CE%BD%CE%B4%CF%81%CE%B9%CE%BA%CE%B1-%CF%80%CE%B1%CF%80%CE%BF%CF%85%CF%84%CF%83%CE%B9%CE%B1-%CE%B3%CE%B9%CE%B1-%CF%84%CF%81%CE%B5%CE%BE%CE%B9%CE%BC%CE%BF-%CF%83%CE%B5-%CE%B4%CF%81%CE%BF%CE%BC%CE%BF-infinityrn-4-GM5ls9/DR2665-004" target="_blank">Find out more</a></button></center>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="equipment">
+        <h1>Εξοπλισμός</h1>
+        <br>
+        <div class="table1">
+            <div class="div1">
+                <div class="div2"><img src="equipment/bonnet.webp"  class="img1"></div>
+                <div class="div2"><img src="equipment/cap.webp" class="img1"></div>
+                <div class="div2"><img src="equipment/football.webp" class="img1"></div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><p style="text-align: center;">swimming bonnet</p></div>
+                <div class="div2"><p style="text-align: center;">cap</p></div>
+                <div class="div2"><p style="text-align: center;">football shoes</p></div>    
+            </div>
+            <div class="div1">
+                <div class="div2 caption1"><button id="b22" class="selecting" onclick="document.getElementById('b22').innerHTML=`added to cart`">Add to cart</button></div>
+                <div class="div2 caption1"><button id="b23" class="selecting" onclick="document.getElementById('b23').innerHTML=`added to cart`">Add to cart</button></div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>37</option>
+                        <option>38</option>
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                        <option>44</option>
+                        <option>45</option>
+                        <option>46</option>
+                    </select>
+                    <button id="b24" class="selecting" onclick="document.getElementById('b24').innerHTML=`added to cart`">Add to cart</button>
+                </div>    
+            </div><br>
+        
+        
+            <div class="div1">
+                <div class="div2"><img src="equipment/gloves.webp" class="img1"></div>
+                <div class="div2"><img src="equipment/gopro.webp" class="img1"></div>
+                <div class="div2"><img src="equipment/helmet.webp" class="img1"></div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><p style="text-align: center;">gloves</p></div>
+                <div class="div2"><p style="text-align: center;">gopro camera</p></div>
+                <div class="div2"><p style="text-align: center;">helmet</p></div>    
+            </div>
+            <div class="div1">
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b25" class="selecting" onclick="document.getElementById('b25').innerHTML=`added to cart`">Add to cart</button>
+                </div>
+                <div class="div2 caption1"><button id="b26" class="selecting" onclick="document.getElementById('b26').innerHTML=`added to cart`">Add to cart</button></div>
+                <div class="div2 caption1"><button id="b27" class="selecting" onclick="document.getElementById('b27').innerHTML=`added to cart`">Add to cart</button></div>    
+            </div>
+
+            <div class="div1">
+                <div class="div2"><img src="equipment/patches.webp" class="img1"></div>
+                <div class="div2"><img src="equipment//uvprot.webp" class="img1"></div>
+                <div class="div2"><img src="equipment/mask.webp" class="img1"></div>    
+            </div>
+            <div class="div1">
+                <div class="div2"><p style="text-align: center;">patches</p></div>
+                <div class="div2"><p style="text-align: center;">UV protective shirt</p></div>
+                <div class="div2"><p style="text-align: center;">mask</p></div>    
+            </div>
+            <div class="div1">
+                <div class="div2 caption1"><button id="b28" class="selecting" onclick="document.getElementById('b28').innerHTML=`added to cart`">Add to cart</button></div>
+                <div class="div2 caption1">
+                    <select>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                    <button id="b29" class="selecting" onclick="document.getElementById('b29').innerHTML=`added to cart`">Add to cart</button>
+                </div>
+                <div class="div2 caption1"><button id="b30" class="selecting" onclick="document.getElementById('b30').innerHTML=`added to cart`">Add to cart</button></div>    
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    </section>
+
+
+    <section class="greysec">
+        <div style="display: flex;">
+            <div style="flex: 1">
+                
+                <img class="img1" src="images/greece.jpg" usemap="#red-spot-map">
+                <map name="red-spot-map">
+                    <area shape="circle" coords="260,360,10" href="https://www.google.gr/maps/place/BODYWORKS+%CE%9A%CE%91%CE%9B%CE%9B%CE%99%CE%98%CE%95%CE%91%CE%A3/@38.0277678,23.0174863,11z/data=!3m1!5s0x14a1bc57ec92481b:0x46be7181ad55757d!4m10!1m2!2m1!1sbased+bodyworks+greece!3m6!1s0x14a1bc57eec5c4e1:0x5de804122f3607d8!8m2!3d37.9576905!4d23.7049068!15sChZiYXNlZCBib2R5d29ya3MgZ3JlZWNlWhgiFmJhc2VkIGJvZHl3b3JrcyBncmVlY2WSAR12aXRhbWluX2FuZF9zdXBwbGVtZW50c19zdG9yZeABAA!16s%2Fg%2F11fylwltwb?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                </map>                
+                
+            </div>
+            <div style="flex: 1; text-align: center;">
+                <h2>Βρες μας</h2><br>
+                <h2>Μπορείς να μας βρεις στο φυσικό μας κατάστημα και γυμναστηριος </h2>
+                <h2>Πατήστε στο χάρτη για να μας βρείτε</h2><br>
+                <img src="images/logo.jpeg" style="width: 50%; height: auto; margin: auto;">
+            </div>
+        </div>
+
+    </section>
+
+    <center><button style=" background-color: inherit; border-radius: 3px;"><a href="#top">Back to top</a></button></center>
+
+
+    <footer style="background-color: rgb(91, 91, 91); border-radius: 5px;">
+        <p>&copy; 2024 My Website | All Rights Reserved</p>
+        <p><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Privacy_policy&ved=2ahUKEwidnM2hlZ-JAxWzVUEAHR-iGoUQFnoECBUQAw&usg=AOvVaw34neIMCfjOWk_LIhacz6g6" target="_blank">Privacy Policy</a></p>
+        <p>Instagram:<a href="https://www.instagram.com/giorgos.kalliontzis/" target="_blank">giorgos.kalliontzis</a></p>
+        <p>Mail: gkalliontzis6@gmail.com</p>
+    
+    
+    </footer>
+
+
+    <script src="products.js"></script>
+
+    
+</body>
+</html>

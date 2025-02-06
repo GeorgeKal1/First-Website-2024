@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="images/logo.jpeg" type="jpeg"> 
+
+    <title>Info</title>
+
+</head>
+<body>
+    <section>
+    <div style="border-bottom: 2px solid grey;"></div>
+    <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
+        <div style="flex: 1;"><a href="arxiki.html">Info</a></div>
+        <div style="flex: 1;"><a href="products.html">Products</a></div>
+        <div style="flex: 1;"><a href="signUp.html" target="_blank">SignUp</a></div>
+        <div style="flex: 1;"><a href="discount.html">Discount🤑</a></div>
+        <div style="flex: 1;"><a href="ChrComp.html">Christmas Competition</a></div>
+        <div style="flex: 1;"><a href="orders.html" target="_blank">Order</a></div>
+        <div style="flex: 1;"><a href="guide.php">Guide</a></div>
+    </div>
+    <div style="border-top: 2px solid grey;"></div>
+    </section>
+    <div>
+        <h1>Δώσε τα στοιχεία του υποψήφιου (Δώσε "ΤΕΛΟΣ" για να σταματήσεις)</h1>
+        <img src="images/logo.jpeg" style="width: 20vw; height: auto; float: right; " >
+        <form id="candidateForm">
+            <label>Όνομα υποψήφιου:</label>
+            <input type="text" id="candidate_name" name="candidate_name" required><br><br>
+            
+            <label>Βαθμός 1:</label>
+            <input type="number" id="grade1" name="grade1" min="0" max="100" ><br><br>
+            
+            <label>Βαθμός 2:</label>
+            <input type="number" id="grade2" name="grade2" min="0" max="100" ><br><br>
+            
+            <label>Βαθμός 3:</label>
+            <input type="number" id="grade3" name="grade3" min="0" max="100" ><br><br>
+            
+            <label>Βαθμός 4:</label>
+            <input type="number" id="grade4" name="grade4" min="0" max="100" ><br><br>
+            
+            <label>Βαθμός 5:</label>
+            <input type="number" id="grade5" name="grade5" min="0" max="100" ><br><br>
+            
+            <label>Βαθμός 6:</label>
+            <input type="number" id="grade6" name="grade6" min="0" max="100" ><br><br>
+
+            <button type="submit">υποβολή</button>
+        </form>
+
+        <div id="result"></div> <!-- Χώρος για την εμφάνιση των αποτελεσμάτων -->
+    </div>
+
+    <script>
+    // Διαχείριση υποβολής της φόρμας χωρίς ανανέωση της σελίδας
+    document.getElementById('candidateForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Αποτροπή της προεπιλεγμένης συμπεριφοράς υποβολής φόρμας
+
+        // Συλλογή δεδομένων από τη φόρμα
+        const formData = new FormData(this);
+
+        // Αποστολή δεδομένων με fetch
+        fetch('ChrComp.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Εμφάνιση των αποτελεσμάτων στο div με id 'result'
+            document.getElementById('result').innerHTML = data;
+        })
+        .catch(error => console.error('Σφάλμα:', error)); // Καταγραφή σφαλμάτων στην κονσόλα
+    });
+    </script>
+</body>
+</html>

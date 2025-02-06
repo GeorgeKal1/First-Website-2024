@@ -1,0 +1,162 @@
+p{
+    text-align: justify;
+    font-size: large;
+
+    
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+    background-color:rgb(42, 42, 42);
+    padding: 2%;
+    margin:0.1%;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: rgb(232, 232, 232);
+}
+h1{
+    text-align: center;
+    color: rgb(232, 232, 232);
+}
+
+
+li{
+    font-size: large;
+}
+a{
+    text-decoration: none;
+    color: rgb(155, 155, 155);
+    font-size: larger;
+}
+
+
+
+
+.section1{ /*Αυτή η κλάση φτιάαχνει το background στο παιχνίδι στην διαφάνεια discount*/
+    border: 2px solid rgb(232, 232, 232);
+    border-radius: 15px;
+    background-color:rgb(68, 68, 68);
+    margin-top: 5%;
+    margin-right: 15%;
+    padding: 1%;
+}
+
+.lower-right-image {/*Αυτή η κλάση αφορά την εικόνα στην αρχική σελίδα*/
+    position: absolute;
+    bottom: 2.7%;
+    right: 5%; 
+    width: 23%; 
+    height:fit-content; 
+    opacity: 0.9; 
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.start1{/*Αυτή η κλάση είναι για το κουμπί στην σελίδα με την έκπτωση*/
+    padding-inline: 5%;
+    padding-top: 1.5%;
+    padding-bottom:1.5%;
+    margin-left:3%;
+    background-color: rgb(230,179,30);
+    border: 2px solid black;
+    border-radius:5px
+}
+
+.input1{/* Αυτή η κλάση φτιάχνει το input στη σελίδα discount*/
+background-color:rgb(232, 232, 232);
+text-align: center;
+border: 1px solid black;
+border-radius: 4px;
+margin-left: 3%;
+padding-inline: 5%;
+padding-top: 0.5%;
+padding-bottom:0.5%;
+}
+
+
+
+
+
+/*Το παρακάτω κομμάτι φτιάχνει ένα κατάλληλο σχ΄΄ήμα για τη σελίδα με τα προιόντα*/
+.table1{
+    display: table;
+    border-collapse:separate ;
+    width: 90%;
+    margin: auto;
+}
+.div1{
+    display: table-row;
+    
+}
+.div2{
+    display: table-cell;
+    padding: 2px;
+}
+.caption1{
+    background-color: white;
+    text-align: center;
+    color:black;
+    
+    border: 2px solid black;
+    border-radius:2px;
+}
+.img1{/*style για τις εικόνες*/
+    width: 100%;
+    border: 2px solid black;
+    border-radius:2px;
+    display: block;
+}
+.selecting{/* style για τα κουμπιά που βάζουν στο καλάθι*/
+    margin: 2vh;
+    text-decoration: none;
+    background-color: rgb(232, 232, 232);
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 50%;
+}
+
+/*Εφαρμόζεται στη σελίδα products για τα κουμπια που εμφανίζουν κάθε προιόν*/
+.kati {
+    color: darkgray;
+    transition: color ; 
+}
+.kati:hover p {
+    color: white; 
+    font-weight:bolder;
+}
+
+.greysec{/*style gia ta sections stin selida products*/
+    background-color: rgb(232, 232, 232);
+    color: black;
+    border: 2px solid rgb(68, 68, 68);
+    border-radius: 5px;
+    padding: 5vw;
+    margin: 5%;
+}
+
+.forswap {/*για την ενναλλαγή στη σελίδα products*/
+    
+    color: rgb(35, 35, 35);
+    transition: color ;
+}
+
+.forswap:hover p {
+    color: black;
+    font-weight: bolder;
+}
+
+
+
+
+
+/*Το παρακάτω κομμάτι αφορά τη σελίδα guide για το weather app*/
+.weatherform{
+    width:80%;
+    background-color: rgb(232, 232, 232);
+    color: black;
+    padding: 3vh;
+    border-radius: 8px;
+}
+
+.label1{
+    font-size: 200%;
+}

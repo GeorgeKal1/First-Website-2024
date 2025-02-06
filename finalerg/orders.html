@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orders</title>
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="images/logo.jpeg" type="jpeg"> 
+
+   <style>
+        fieldset{
+                width: 80%;
+                margin: auto;
+                text-align: center;
+                display: table;
+
+            }
+   </style>
+
+</head>
+<body>
+    <div style="border-bottom: 2px solid grey;"></div>
+    <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
+        <div style="flex: 1;"><a href="arxiki.html">Info</a></div>
+        <div style="flex: 1;"><a href="products.html">Products</a></div>
+        <div style="flex: 1;"><a href="signUp.html" target="_blank">SignUp</a></div>
+        <div style="flex: 1;"><a href="discount.html">Discount🤑</a></div>
+        <div style="flex: 1;"><a href="ChrComp.html">Christmas Competition</a></div>
+        <div style="flex: 1;"><a href="orders.html" target="_blank">Order</a></div>
+        <div style="flex: 1;"><a href="guide.php">Guide</a></div>
+    </div>
+    <div style="border-top: 2px solid grey;"></div>
+
+    
+    <h1>Orders</h1>
+    <form id="form" action="orders.php" method="post">
+        <fieldset>
+            <legend>Στοιχεία Πελάτη</legend>
+            <div class="div1">
+                <div class="div2">
+                    <label for="gender" title="Επιλέξτε το φύλο σας">Φύλο*</label>
+                </div>
+                <div class="div2">
+                    <select id="gender" name="gender" required>
+                        <option>Άντρας</option>
+                        <option>Γυναίκα</option>
+                        <option>Άλλο</option>
+                    </select>
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="name" title="Εισάγετε το όνομά σας">Όνομα*</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="name" name="name" placeholder="Μόνο ελληνικά" required>
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="lname" title="Εισάγετε το επώνυμό σας">Επώνυμο*</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="lname" name="lname" placeholder="Μόνο ελληνικά" required>
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="birth" title="Εισάγετε την ημερομηνία γέννησής σας">Ημερομηνία Γέννησης</label>
+                </div>
+                <div class="div2">
+                    <input type="date" id="birth" name="birth" required>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Στοιχεία Παραγγελίας</legend>
+            <div class="div1">
+                <div class="div2">
+                    <label for="category" title="Επιλέξτε κατηγορία προϊόντος">Κατηγορία</label>
+                </div>
+                <div class="div2">
+                    <select id="category" name="category">
+                        <option>Ρούχα</option>
+                        <option>Παπούτσια</option>
+                        <option>Εξοπλισμός</option>
+                        <option>Άλλο</option>
+                    </select>
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="size" title="Επιλέξτε μέγεθος">Μέγεθος</label>
+                </div>
+                <div class="div2">
+                    <select id="size" name="size">
+                        <optgroup label="Ρούχα">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </optgroup>
+                        <optgroup label="Παπούτσια">
+                            <option>40</option>
+                            <option>41</option>
+                            <option>42</option>
+                            <option>43</option>
+                            <option>44</option>
+                            <option>45</option>
+                            <option>46</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="color" title="Επιλέξτε χρώμα">Χρώμα</label>
+                </div>
+                <div class="div2">
+                    <input type="color" id="color" name="color">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="quan" title="Εισάγετε ποσότητα">Ποσότητα</label>
+                </div>
+                <div class="div2">
+                    <input type="number" min="1" max="99" id="quan" name="quan">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Στοιχεία Επικοινωνίας</legend>
+            <div class="div1">
+                <div class="div2">
+                    <label for="adress" title="Εισάγετε τη διεύθυνσή σας">Διεύθυνση</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="adress" name="adress">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="city" title="Εισάγετε την πόλη σας">Πόλη</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="city" name="city">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="zip" title="Εισάγετε τον ταχυδρομικό κώδικα">Ταχ. Κωδ.</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="zip" name="zip">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="tel" title="Εισάγετε το τηλέφωνό σας">Τηλέφωνο</label>
+                </div>
+                <div class="div2">
+                    <input type="tel" id="tel" name="tel">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="mail" title="Εισάγετε το email σας">E-mail*</label>
+                </div>
+                <div class="div2">
+                    <input type="email" id="mail" name="mail" required>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Δημιουργία Λογαριασμού</legend>
+            <div class="div1">
+                <div class="div2">
+                    <label for="pass1" title="Εισάγετε συνθηματικό">Συνθηματικό*</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="pass1" name="pass1">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="pass2" title="Επιβεβαιώστε το συνθηματικό">Επιβεβαίωση συνθηματικού*</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="pass2" name="pass2">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="check" title="Αποδέχεστε τους όρους">Δηλώνω υπεύθυνα ότι έχω διαβάσει τους<br> όρους και τις προυποθέσεις</label>
+                </div>
+                <div class="div2">
+                    <input type="checkbox" id="check" name="check" required>
+                </div>
+            </div>
+        </fieldset>
+
+    <center>
+        <div class="div1" >
+            <div class="div2">
+                <button type="submit" id="s1">Υποβολή</button>
+                <button type="reset" id="s2">Διαγραφή</button>
+            </div>
+        </div>
+    </center>
+    </form>
+    
+    <br>
+
+    <center>
+        <form method="post" action="orders2.php" id="findme">
+            <label for="user">Αναζήτηση σύμφωνα με το email
+            </label>
+            <input type="text" id="findm" name="findm" required>
+            <input type="submit" name="btn" id="btn" value="Αναζήτηση" >
+            <br><br>
+        </form> 
+    </center>
+
+
+
+
+
+    <script>
+        
+
+        document.getElementById('form').addEventListener('submit', function(event) {
+            let isValid = true; // Μεταβλητή που ελέγχει αν η φόρμα είναι έγκυρη
+
+            // Βοηθητική συνάρτηση για εμφάνιση λάθους
+            function showError(inputField, message) {
+                inputField.style.borderColor = 'red'; // Αλλαγή χρώματος περιγράμματος
+                alert(message); // Εμφάνιση αναδυόμενου παραθύρου
+                isValid = false; // Ενημέρωση ότι υπάρχει σφάλμα
+            }
+
+            // 1. Έλεγχος Όνομα (Μόνο ελληνικοί χαρακτήρες)
+            const nameField = document.getElementById('name');
+            const nameValue = nameField.value.trim();
+            const greekRegex = /^[Α-ω]+$/;
+
+            if (!greekRegex.test(nameValue)) {
+                showError(nameField, 'Παρακαλώ εισάγετε μόνο ελληνικά για το όνομα.');
+            } else {
+                nameField.style.borderColor = ''; // Επαναφορά εμφάνισης
+            }
+
+            // 2. Έλεγχος Επώνυμο (Μέγιστο 50 χαρακτήρες)
+            const lnameField = document.getElementById('lname');
+            const lnameValue = lnameField.value.trim();
+
+            if (lnameValue.length > 50) {
+                showError(lnameField, 'Το επώνυμο δεν μπορεί να υπερβαίνει τους 50 χαρακτήρες.');
+            } else {
+                lnameField.style.borderColor = ''; // Επαναφορά εμφάνισης
+            }
+
+            // 3. Έλεγχος Ημερομηνίας Γέννησης (Άνω των 16 ετών)
+            const birthField = document.getElementById('birth');
+            const birthValue = birthField.value;
+
+            if (birthValue) {
+                const birthDate = new Date(birthValue);
+                const today = new Date();
+                const age = today.getFullYear() - birthDate.getFullYear();
+                if (age < 16 || (age === 16 && today < new Date(birthDate.setFullYear(birthDate.getFullYear() + 16)))) {
+                    showError(birthField, 'Πρέπει να είστε τουλάχιστον 16 ετών.');
+                } else {
+                    birthField.style.borderColor = ''; // Επαναφορά εμφάνισης
+                }
+            } else {
+                showError(birthField, 'Παρακαλώ εισάγετε την ημερομηνία γέννησής σας.');
+            }
+
+            // 4. Έλεγχος Συνθηματικού (Τουλάχιστον 8 χαρακτήρες, 1 κεφαλαίο, 1 αριθμό, 1 ειδικό χαρακτήρα)
+            const pass1Field = document.getElementById('pass1');
+            const pass1Value = pass1Field.value;
+            const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/;
+
+            if (!passwordRegex.test(pass1Value)) {
+                showError(pass1Field, 'Το συνθηματικό πρέπει να έχει τουλάχιστον 8 χαρακτήρες, 1 κεφαλαίο γράμμα, 1 αριθμό και 1 ειδικό χαρακτήρα.');
+            } else {
+                pass1Field.style.borderColor = ''; // Επαναφορά εμφάνισης
+            }
+
+            // 5. Επιβεβαίωση Συνθηματικού (Πρέπει να ταιριάζει με το προηγούμενο πεδίο)
+            const pass2Field = document.getElementById('pass2');
+            const pass2Value = pass2Field.value;
+
+            if (pass1Value !== pass2Value) {
+                showError(pass2Field, 'Το συνθηματικό και η επιβεβαίωση δεν ταιριάζουν.');
+            } else {
+                pass2Field.style.borderColor = ''; // Επαναφορά εμφάνισης
+            }
+
+            // Ακύρωση υποβολής αν υπάρχουν λάθη
+            if (!isValid) {
+                event.preventDefault();
+            }
+
+    });
+
+    </script>
+</body>
+</html>

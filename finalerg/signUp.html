@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>signup</title>
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="images/logo.jpeg" type="jpeg"> 
+
+    <style>
+        fieldset{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            display: table;
+
+        }
+
+    @media only screen and (max-width: 500px){
+    body{
+        background-color: black;
+        transition: 1s;
+        }
+    }
+        
+    </style>
+
+</head>
+<body>
+    <div style="border-bottom: 2px solid grey;"></div>
+    <div style="display: flex; justify-content: space-between; text-align: center; width: 100%;">
+        <div style="flex: 1;"><a href="arxiki.html">Info</a></div>
+        <div style="flex: 1;"><a href="products.html">Products</a></div>
+        <div style="flex: 1;"><a href="signUp.html" target="_blank">SignUp</a></div>
+        <div style="flex: 1;"><a href="discount.html">Discount🤑</a></div>
+        <div style="flex: 1;"><a href="ChrComp.html">Christmas Competition</a></div>
+        <div style="flex: 1;"><a href="orders.html" target="_blank">Order</a></div>
+        <div style="flex: 1;"><a href="guide.php">Guide</a></div>
+    </div>
+    <div style="border-top: 2px solid grey;"></div>
+
+
+    <form>
+        <h1 id="yellow" style="flex: 1;">Signup</h1>
+    
+        <fieldset>
+            <legend>Προσωπικές Πληροφορίες</legend>
+            <div class="div1">
+                <div class="div2">
+                    <label for="title" title="Πώς θα θέλατε να σας απευθύνονται">Τίτλος</label>
+                </div>
+                <div class="div2">
+                    <input type="radio" id="title_mr" name="title" value="mr">Κος
+                    <input type="radio" id="title_mrs" name="title" value="mrs">Κα
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="name" title="Εισάγετε το μικρό σας όνομα">Όνομα</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="name" name="name" placeholder="π.χ., Αντώνης">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="lastname" title="Εισάγετε το επώνυμό σας">Επώνυμο</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="lastname" name="lastname" placeholder="π.χ., Αντωνίου">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="birthdate" title="Εισάγετε την ημερομηνία γέννησής σας">Ημερομηνία γέννησης</label>
+                </div>
+                <div class="div2">
+                    <input type="date" id="birthdate" name="birthdate" min="1980-01-01" max="2022-12-31">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="country" title="Επιλέξτε τη χώρα διαμονής σας">Χώρα Διαμονής</label>
+                </div>
+                <div class="div2">
+                    <select id="country" name="country">
+                        <option value="greece">Ελλάδα</option>
+                        <option value="turkey">Τουρκία</option>
+                        <option value="albania">Αλβανία</option>
+                        <option value="bulgaria">Βουλγαρία</option>
+                        <option value="serbia">Σερβία</option>
+                    </select>
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="status" title="Επιλέξτε την οικογενειακή σας κατάσταση">Οικογενειακή Κατάσταση</label>
+                </div>
+                <div class="div2">
+                    <input type="radio" id="status_married" name="status" value="married">Παντρεμένος/η
+                    <input type="radio" id="status_unmarried" name="status" value="unmarried">Άγαμος/η
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <input type="reset" value="Επαναφορά" style="padding:2%; padding-left: 3%; padding-right: 3%;">
+                </div>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Πληροφορίες Επικοινωνίας</legend>
+            <div class="div1">
+                <div class="div2">
+                    <label for="address" title="Εισάγετε τη διεύθυνσή σας">Διεύθυνση</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="address" name="address" placeholder="π.χ., Εθνικής Αντιστάσεως 17">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="city" title="Εισάγετε την πόλη διαμονής σας">Πόλη</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="city" name="city" maxlength="15" placeholder="π.χ., Αθήνα">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="region" title="Εισάγετε την περιοχή σας">Περιοχή</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="region" name="region" placeholder="π.χ., Πειραιάς">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="postal_code" title="Εισάγετε τον ταχυδρομικό σας κώδικα">Ταχυδρομικός Κώδικας</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="postal_code" name="postal_code" placeholder="π.χ., 18547">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="phone" title="Εισάγετε τον αριθμό τηλεφώνου σας">Τηλέφωνο (κινητό)</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="phone" name="phone" maxlength="10" placeholder="π.χ., 6938234313">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="email" title="Εισάγετε τη διεύθυνση email σας">Email</label>
+                </div>
+                <div class="div2">
+                    <input type="text" id="email" name="email" placeholder="π.χ., tiredstudent@gmail.com">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <input type="reset" value="Επαναφορά" style="padding:2%; padding-left: 3%; padding-right: 3%;">
+                </div>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Δημιουργία Κωδικού</legend>
+            <div class="div1">
+                <div class="div2">
+                    <label for="password" title="Εισάγετε τον κωδικό πρόσβασης σας">Κωδικός Πρόσβασης</label>
+                </div>
+                <div class="div2">
+                    <input type="password" id="password" name="password">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <label for="confirm_password" title="Επιβεβαιώστε τον κωδικό πρόσβασής σας">Επιβεβαίωση Κωδικού</label>
+                </div>
+                <div class="div2">
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </div>
+            </div>
+            <div class="div1">
+                <div class="div2">
+                    <input type="reset" value="Επαναφορά" style="padding:2%; padding-left: 3%; padding-right: 3%;">
+                </div>
+            </div>
+        </fieldset>
+        
+        <div style="text-align: center;">
+            <label for="terms" style="font-size: large;">Έχω διαβάσει και αποδέχομαι τους όρους χρήσης</label>
+            <input type="checkbox" name="terms" id="terms"><br>
+        
+            <label for="notifications" style="font-size: large;">Συμφωνώ να λαμβάνω ειδοποιήσεις από αυτόν τον ιστότοπο</label>
+            <input type="checkbox" name="notifications" id="notifications"><br>
+            <input type="submit" value="submit" style="padding:1vh; padding-left: 3%; padding-right: 3%;">
+        </div>
+        
+    
+            
+       
+    </form>
+        
+    
+    
+    
+    
+        
+    
+       
+    <footer style="background-color: rgb(91, 91, 91); border-radius: 5px;">
+        <p>&copy; 2024 My Website | All Rights Reserved</p>
+        <p><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Privacy_policy&ved=2ahUKEwidnM2hlZ-JAxWzVUEAHR-iGoUQFnoECBUQAw&usg=AOvVaw34neIMCfjOWk_LIhacz6g6" target="_blank">Privacy Policy</a></p>
+        <p>Instagram:<a href="https://www.instagram.com/giorgos.kalliontzis/" target="_blank">giorgos.kalliontzis</a></p>
+        <p>Mail: gkalliontzis6@gmail.com</p>
+    
+    
+    </footer>
+    
+    
+
+
+</body>
+</html>
